@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:sans-serif;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	color: #DAA853;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(rgba(21, 27, 50, 0), rgba(21, 27, 50, 0.5)), url("musician-interior-design-ideas.jpeg") no-repeat center fixed;
+	background-color: #151B32;
+	background-size: cover;
+
+	
+}
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.title{
+	margin: 0 50px;
+}
+
+.title::before{
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 5px;
+	background: #DAA853;
+	margin-bottom: 10px;
+}
+
+.title h1{
+	font-size: 40pt;	
+}
+
+.container {
+	max-width: 650px;
+	width: 100%;
+	background-color:rgba(21, 27, 50);
+	box-shadow: black 0 0 20px;
+	padding: 20px 25px;
+	border-radius: 5px;
+}
+.container h2{
+	font-size: 40pt;
+}
+.container h3{
+	font-size: 20px;
+}
+
+.container form .detail {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+form .detail .input-box {
+	margin: 20px 0 10px 0;
+	width: calc(100% / 2 - 10px);
+	
+}
+
+.detail .input-box .text {
+margin-bottom: 20px;	
+
+}
+
+.detail .input-box input,
+ .detail .input-box select{
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	padding-left: 10px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+	background-color: #000000;
+	color: #DAA853;
+}
+
+
+.detail .input-box input:focus,
+.detail .input-box input:valid{
+	border-color: black;
+}
+
+form .detail .gender{
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 12px 0;
+	
+	
+}
+
+.detail .gender .gender-btn{
+	background-color: black;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.container .agree{
+	display:flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.container .space{
+	height: 45px;
+	width: 100%;
+	margin: 45px 0;
+}
+
+.space input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	background-color: #F0A500;
+	border-radius: 5px;
+	border: 1px solid #F0A500;
+	box-shadow: black 0 0 20px;
+	
+	
+}
+
+.space input:hover {
+	background-color: #CF7500;
+	box-shadow: black 0 0 10px;
+}
+
+
+.click {
+	padding: 10px 25px;
+	margin: 5px 0;
+	border: rgba(0, 0, 0, 0) solid 1px;
+	transition: 0.2s ease;
+}
+
+.click:hover {
+	border: #222c3c solid 1px;
+	color: #222c3c;
+	margin-left: 20px;
+	border-radius: 5px;
+	justify-self: center;
+	cursor: pointer;
+	
+}
+.click-white {
+	border: #e2e0d5 solid 1px;
+	padding: 10px 25px;
+	margin: 10px;
+	border-radius: 5px;
+	justify-self: center;
+	transition: 0.2s ease;
+}
+
+.click-white:hover {
+	background-color: #e2e0d5;
+	color: #222c3c;
+	border:#e2e0d5 solid 1px;
+	cursor: pointer;
+}
+
+.click-black {
+	border: #222c3c solid 1px;
+	color: #222c3c;
+	padding: 10px 25px;
+	margin: 20px 0;
+	border-radius: 5px;
+	justify-self: center;
+	transition: 0.2s ease;
+}
+
+.click-black:hover {
+	background-color: #222c3c;
+	color: #e2e0d5;
+	border:#222c3c solid 1px;
+	cursor: pointer;
+}
+
+.click-black-small {
+	border: #222c3c solid 1px;
+	color: #222c3c;
+	padding: 5px 10px;
+	margin: 20px 0;
+	border-radius: 5px;
+	justify-self: center;
+	transition: 0.2s ease;
+}
+
+.click-black-small:hover {
+	background-color: #222c3c;
+	color: #e2e0d5;
+	border:#222c3c solid 1px;
+	cursor: pointer;
+}
+
+.click-submit {
+	border: #222c3c solid 1px;
+	background-color: #222c3c;
+	text-align: right;
+	color: #e2e0d5;
+	padding: 10px 25px;
+	margin: 20px 0;
+	border-radius: 5px;
+	justify-self: center;
+	transition: 0.2s ease;
+}
+.click-submit:hover {
+	padding: 10px 50px;
+}
